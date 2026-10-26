@@ -1,0 +1,244 @@
+rh-sistema/
+│
+├── index.php
+├── composer.json
+├── composer.lock
+├── crendecias.txt
+├── ESTRUTURA DO PROJETO.txt
+│
+├── assets/
+│   ├── css/
+│   │   ├── style.css
+│   │   ├── dashboard.css
+│   │   ├── responsive.css
+│   │   └── print.css
+│   │
+│   ├── js/
+│   │   ├── scripts.js
+│   │   ├── dashboard.js
+│   │   ├── charts.js
+│   │   └── validation.js
+│   │
+│   ├── img/
+│   └── uploads/
+│
+├── classes/
+│   ├── Database.php
+│   ├── Usuario.php
+│   ├── Funcionario.php
+│   ├── Departamento.php
+│   ├── Cargo.php
+│   ├── Presenca.php
+│   ├── Ferias.php
+│   ├── FolhaPagamento.php
+│   ├── Avaliacao.php
+│   ├── Documento.php
+│   ├── Vaga.php
+│   ├── Candidato.php
+│   ├── Entrevista.php
+│   ├── Notificacao.php
+│   ├── LogAuditoria.php
+│   └── PasswordReset.php
+│
+├── config/
+│   ├── config.php
+│   ├── database.php
+│   ├── impostos.php
+│   └── permissions.php
+│
+├── database/
+│   ├── schema.sql
+│   ├── seed.sql
+│   └── migrations/
+│
+├── includes/
+│   ├── auth.php
+│   ├── bootstrap.php
+│   ├── functions.php
+│   ├── header.php
+│   ├── footer.php
+│   ├── sidebar.php
+│   ├── head_publico.php
+│   ├── foot_publico.php
+│   ├── paginacao.php
+│   └── permissions.php
+│
+├── cron/
+│   ├── gerar_notificacoes.php
+│   ├── backup_automatico.php
+│   └── verificar_ferias.php
+│
+├── modules/
+│
+│   ├── auth/
+│   │   ├── login.php
+│   │   ├── logout.php
+│   │   ├── acesso_negado.php
+│   │   ├── esqueci_senha.php
+│   │   └── redefinir_senha.php
+│   │
+│   ├── dashboard/
+│   │   ├── index.php
+│   │   ├── super_admin.php
+│   │   ├── administrador_rh.php
+│   │   ├── gestor.php
+│   │   ├── funcionario.php
+│   │   ├── auditor.php
+│   │   └── _helpers.php
+│   │
+│   ├── funcionarios/
+│   │   ├── index.php
+│   │   ├── criar.php
+│   │   ├── editar.php
+│   │   ├── visualizar.php
+│   │   ├── desligar.php
+│   │   ├── foto.php
+│   │   ├── historico.php
+│   │   ├── imprimir.php
+│   │   ├── exportar_csv.php
+│   │   ├── exportar_pdf.php
+│   │   └── _form.php
+│   │
+│   ├── usuarios/
+│   │   ├── index.php
+│   │   ├── criar.php
+│   │   ├── editar.php
+│   │   ├── excluir.php
+│   │   ├── permissoes.php
+│   │   └── _form.php
+│   │
+│   ├── departamentos/
+│   │   ├── index.php
+│   │   ├── criar.php
+│   │   ├── editar.php
+│   │   ├── visualizar.php
+│   │   ├── excluir.php
+│   │   └── _form.php
+│   │
+│   ├── cargos/
+│   │   ├── index.php
+│   │   ├── criar.php
+│   │   ├── editar.php
+│   │   ├── visualizar.php
+│   │   ├── excluir.php
+│   │   └── _form.php
+│   │
+│   ├── presenca/
+│   │   ├── index.php
+│   │   ├── lancar.php
+│   │   ├── editar.php
+│   │   ├── visualizar.php
+│   │   ├── excluir.php
+│   │   ├── relatorio.php
+│   │   └── exportar.php
+│   │
+│   ├── ferias/
+│   │   ├── index.php
+│   │   ├── solicitar.php
+│   │   ├── visualizar.php
+│   │   ├── aprovar.php
+│   │   ├── rejeitar.php
+│   │   ├── cancelar.php
+│   │   ├── calendario.php
+│   │   └── relatorio.php
+│   │
+│   ├── folha-pagamento/
+│   │   ├── index.php
+│   │   ├── criar.php
+│   │   ├── editar.php
+│   │   ├── visualizar.php
+│   │   ├── pagar.php
+│   │   ├── recibo.php
+│   │   ├── exportar_csv.php
+│   │   ├── exportar_pdf.php
+│   │   └── relatorio.php
+│   │
+│   ├── avaliacao/
+│   │   ├── index.php
+│   │   ├── criar.php
+│   │   ├── visualizar.php
+│   │   ├── editar.php
+│   │   ├── excluir.php
+│   │   ├── resultado.php
+│   │   └── relatorio.php
+│   │
+│   ├── recrutamento/
+│   │   ├── index.php
+│   │   ├── criar_vaga.php
+│   │   ├── editar_vaga.php
+│   │   ├── visualizar_vaga.php
+│   │   ├── candidatos.php
+│   │   ├── candidato.php
+│   │   ├── curriculo.php
+│   │   ├── entrevista.php
+│   │   ├── avaliar_candidato.php
+│   │   ├── aprovar_candidato.php
+│   │   ├── rejeitar_candidato.php
+│   │   └── relatorio.php
+│   │
+│   ├── documentos/
+│   │   ├── index.php
+│   │   ├── enviar.php
+│   │   ├── visualizar.php
+│   │   ├── editar.php
+│   │   ├── excluir.php
+│   │   ├── download.php
+│   │   └── compartilhar.php
+│   │
+│   ├── notificacoes/
+│   │   ├── index.php
+│   │   ├── excluir.php
+│   │   ├── marcar_lida.php
+│   │   ├── marcar_lidas.php
+│   │   └── configuracoes.php
+│   │
+│   ├── auditoria/
+│   │   ├── index.php
+│   │   ├── visualizar.php
+│   │   ├── relatorio.php
+│   │   └── exportar.php
+│   │
+│   ├── relatorios/
+│   │   ├── index.php
+│   │   ├── funcionarios.php
+│   │   ├── presencas.php
+│   │   ├── ferias.php
+│   │   ├── folha.php
+│   │   ├── avaliacoes.php
+│   │   ├── recrutamento.php
+│   │   ├── documentos.php
+│   │   ├── auditoria.php
+│   │   ├── departamentos.php
+│   │   ├── cargos.php
+│   │   ├── exportar_csv.php
+│   │   └── exportar_pdf.php
+│   │
+│   ├── backup/
+│   │   ├── index.php
+│   │   ├── exportar.php
+│   │   ├── restaurar.php
+│   │   ├── agendar.php
+│   │   └── historico.php
+│   │
+│   ├── perfil/
+│   │   ├── index.php
+│   │   ├── tema.php
+│   │   └── seguranca.php
+│   │
+│   ├── configuracoes/
+│   │   ├── index.php
+│   │   ├── empresa.php
+│   │   ├── usuarios.php
+│   │   ├── seguranca.php
+│   │   ├── notificacoes.php
+│   │   ├── folha.php
+│   │   ├── ferias.php
+│   │   └── sistema.php
+│   │
+│   └── erros/
+│       ├── 403.php
+│       ├── 404.php
+│       ├── 419.php
+│       └── 500.php
+│
+└── vendor/

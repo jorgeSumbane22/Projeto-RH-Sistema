@@ -1,0 +1,9 @@
+@media print {
+    .rh-sidebar, .rh-topbar, .rh-footer, .btn, .no-print, form, .dropdown, .pagination { display:none !important; }
+    .rh-content { margin-left:0 !important; }
+    .rh-content main { padding:0 !important; max-width:none !important; }
+    body { background:#fff !important; color:#111 !important; }
+    .card, .dashboard-card, .dash-card, .metric-card, .sa-panel { box-shadow:none !important; border:1px solid #bbb !important; break-inside:avoid; }
+    .chart-box, .chart-box-sm { height:240px !important; }
+    a { color:#111 !important; text-decoration:none !important; }
+}

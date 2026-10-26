@@ -65,3 +65,7 @@ Desenvolvedor de Software | Desenvolvimento Web | PHP | MySQL
 ## 📌 Estado do Projeto
 
 Projeto em desenvolvimento e aperfeiçoamento contínuo, com foco na melhoria das funcionalidades, segurança, desempenho e experiência do utilizador.
+
+## 📚 Documentação técnica
+
+Instalação, estrutura e detalhes de implementação: [docs/DOCUMENTACAO-TECNICA.md](docs/DOCUMENTACAO-TECNICA.md).

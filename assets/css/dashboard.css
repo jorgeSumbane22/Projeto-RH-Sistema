@@ -1,0 +1,20 @@
+/* Premium dashboard system shared by all profile dashboards */
+:root { --dash-primary:#155e75; --dash-primary-2:#0e7490; --dash-teal:#14b8a6; --dash-purple:#7c3aed; --dash-orange:#f97316; --dash-radius:16px; --dash-shadow:0 10px 30px rgba(15,41,64,.08); --dash-shadow-hover:0 18px 44px rgba(15,41,64,.14); }
+.dashboard-page, .superadmin-page { color:var(--bs-body-color); }
+.dashboard-hero { border-radius:var(--dash-radius); padding:1.35rem 1.5rem; color:#fff; background:linear-gradient(135deg,#0b3d52,#155e75 55%,#0e7490); box-shadow:0 14px 34px rgba(9,58,80,.2); }
+.dashboard-filter, .filter-card-premium { border:1px solid var(--rh-border); border-radius:var(--dash-radius); background:var(--rh-card-bg); box-shadow:var(--dash-shadow); }
+.dashboard-card, .dash-card, .metric-card, .sa-panel { border:1px solid var(--rh-border); border-radius:var(--dash-radius); background:var(--rh-card-bg); box-shadow:var(--dash-shadow); overflow:hidden; }
+.dashboard-card:hover, .dash-card:hover, .metric-card:hover { box-shadow:var(--dash-shadow-hover); }
+.metric-card { position:relative; padding:1.15rem; height:100%; }
+.metric-card::before { content:""; position:absolute; inset:0 auto 0 0; width:4px; background:var(--metric-color,var(--dash-primary)); }
+.metric-value { font-size:1.65rem; font-weight:850; letter-spacing:-.6px; }
+.metric-label { color:var(--bs-secondary-color); font-size:.68rem; font-weight:800; letter-spacing:.06em; text-transform:uppercase; }
+.metric-icon { width:44px; height:44px; display:grid; place-items:center; border-radius:12px; color:var(--metric-color,var(--dash-primary)); background:color-mix(in srgb,var(--metric-color,var(--dash-primary)) 14%,transparent); }
+.chart-box { position:relative; height:270px; padding:1rem; }
+.chart-box-sm { position:relative; height:220px; padding:1rem; }
+.dashboard-card-header { display:flex; align-items:center; justify-content:space-between; gap:.75rem; padding:1rem 1.15rem .65rem; border-bottom:1px solid var(--rh-border); }
+.dashboard-card-header h6 { margin:0; font-weight:800; }
+.quick-action-premium { display:inline-flex; align-items:center; gap:.45rem; padding:.6rem .8rem; border:1px solid var(--rh-border); border-radius:10px; color:var(--bs-body-color); text-decoration:none; font-weight:700; font-size:.8rem; transition:.18s ease; }
+.quick-action-premium:hover { color:#fff; background:var(--dash-primary-2); border-color:var(--dash-primary-2); transform:translateY(-2px); }
+.status-dot { width:9px; height:9px; border-radius:50%; display:inline-block; background:currentColor; }
+@media (max-width:767.98px) { .dashboard-hero{padding:1rem;} .chart-box{height:220px;} .chart-box-sm{height:190px;} .metric-value{font-size:1.3rem;} }

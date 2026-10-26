@@ -1,0 +1,9 @@
+/* Cross-module responsive safeguards */
+html { overflow-x:hidden; }
+body { min-width:320px; }
+img, canvas, svg { max-width:100%; }
+.table-responsive { overflow-x:auto; -webkit-overflow-scrolling:touch; }
+.table-responsive table { min-width:640px; }
+.page-header-custom, .page-title-row { gap:.8rem; flex-wrap:wrap; }
+@media (max-width:991.98px) { .rh-content main { padding:1.25rem !important; } .rh-topbar-premium { padding:.65rem 1rem; } }
+@media (max-width:575.98px) { .rh-content main { padding:.9rem !important; } .table-responsive table { min-width:580px; } .btn-group, .form-actions { flex-wrap:wrap; } .btn-group>.btn, .form-actions>.btn { flex:1 1 auto; } .card-body { padding:1rem; } .modal-dialog { margin:.65rem; } }
